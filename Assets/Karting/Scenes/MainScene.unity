@@ -25536,8 +25536,9 @@ MonoBehaviour:
   gameObj: {fileID: 695900667}
   allVehicles:
   - {fileID: 8494452065336578853, guid: 05d6a7ad57ab1f04c9d6a6fc7fae4554, type: 3}
-  - {fileID: 9051090152796957281, guid: 97d46161b53d85b4e940e67ca85ab782, type: 3}
+  - {fileID: 1594803977906171025, guid: 7a6897854ddcb9e4fa8ea0441a0eaf7f, type: 3}
   - {fileID: 6824572641015654427, guid: 46216e022a01b7d4792182e5acb00792, type: 3}
+  - {fileID: 8598696960770618637, guid: ae4e9eaf8b3b12141ae36fce67652166, type: 3}
   cinemachineCamera: {fileID: 867987757}
   gameFlowManager: {fileID: 695900666}
 --- !u!4 &1654904873
