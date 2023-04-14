@@ -52,6 +52,12 @@ namespace KartGame.KartSystems
             [Tooltip("Additional gravity for when the kart is in the air.")]
             public float AddedGravity;
 
+            /*[Tooltip("Kart's speed when boosted.")]
+            public float BoostedSpeed;
+
+            [Tooltip("Kart's Acceleration when boosted.")]
+            public float BoostedAcceleration;*/
+
             // allow for stat adding for powerups.
             public static Stats operator +(Stats a, Stats b)
             {
@@ -67,6 +73,8 @@ namespace KartGame.KartSystems
                     ReverseSpeed        = a.ReverseSpeed + b.ReverseSpeed,
                     TopSpeed            = a.TopSpeed + b.TopSpeed,
                     Steer               = a.Steer + b.Steer,
+                   /* BoostedSpeed        = a.BoostedSpeed + b.BoostedSpeed,
+                    BoostedAcceleration = a.BoostedAcceleration + b.BoostedAcceleration,*/
                 };
             }
         }
@@ -88,7 +96,22 @@ namespace KartGame.KartSystems
             CoastingDrag        = 4f,
             Grip                = .95f,
             AddedGravity        = 1f,
+            /*BoostedSpeed        = 10f,
+            BoostedAcceleration = 5f,*/
         };
+
+        /*public void Boost(float BoostAmt)
+        {
+            if(BoostAmt == 0)
+            {
+                return;
+            }
+
+            var boosted = new ArcadeKart.Stats();
+            boosted.Stats.TopSpeed = boosted.Stats.BoostedSpeed;
+            boosted.Stats.Acceleration = boosted.Stats.BoostedAcceleration;
+            Rigidbody.AddForce(transform.forward * BoostAmt, ForceMode.Impulse);
+        }*/
 
         [Header("Vehicle Visual")] 
         public List<GameObject> m_VisualWheels;
