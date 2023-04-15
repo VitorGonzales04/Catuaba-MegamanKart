@@ -17,7 +17,7 @@ public class KartItem : MonoBehaviour
     private bool UseItem;
 
     public Item ItemUse;
-    private Item RemainingItemUses;
+    private int RemainingItemUses;
 
     public void StartPickup()
     {
@@ -52,14 +52,14 @@ public class KartItem : MonoBehaviour
     {
         RemainingItemUses -= 1;
 
-        /*if(ItemUse.Boost.Length > 0)
+        if(ItemUse.Boost.Length > 0)
         {
             foreach (ItemBoostFunction ItemBoost in ItemUse.Boost)
             {
                 Kart.Boost(ItemBoost.BoostAmt);
             }
-        }*/
-
+        }
+        
         if(RemainingItemUses <= 1)
         {
             ResetItem();
