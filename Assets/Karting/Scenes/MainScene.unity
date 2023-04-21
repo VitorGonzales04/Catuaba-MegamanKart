@@ -30859,6 +30859,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllItems:
   - {fileID: 11400000, guid: f26f3d7b9dac32f4b9a191cb8e7b5701, type: 2}
+  - {fileID: 11400000, guid: 5d8fc08e9d907eb4b8a92ab7c67779db, type: 2}
+  - {fileID: 11400000, guid: 3d5bdeb300882444cb508e0667f4ab88, type: 2}
+  - {fileID: 11400000, guid: 1f37382fab6313a4babbd170211b57dc, type: 2}
+  - {fileID: 11400000, guid: 1ad70279448666f4ba65d0e4c8378991, type: 2}
 --- !u!4 &2022112249
 Transform:
   m_ObjectHideFlags: 0

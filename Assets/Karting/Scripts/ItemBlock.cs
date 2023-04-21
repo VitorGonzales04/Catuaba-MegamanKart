@@ -10,8 +10,6 @@ public class ItemBlock : MonoBehaviour
         {
             if(other.GetComponent<KartItem>().HeldItem == -1 && other.GetComponent<KartItem>().CanPickup)
             {
-                
-
                 other.GetComponent<KartItem>().StartPickup();
                 Destroy(gameObject);
             }

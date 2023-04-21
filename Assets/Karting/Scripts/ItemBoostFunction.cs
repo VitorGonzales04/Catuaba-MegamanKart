@@ -6,4 +6,7 @@ using UnityEngine;
 public class ItemBoostFunction
 {
    public float BoostAmt;
+
+   public ArcadeKart.Stats NewStats;
+
 }

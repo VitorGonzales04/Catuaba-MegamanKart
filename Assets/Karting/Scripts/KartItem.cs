@@ -17,7 +17,27 @@ public class KartItem : MonoBehaviour
     private bool UseItem;
 
     public Item ItemUse;
-    private int RemainingItemUses;
+    private int RemainingItemUses;  
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+       Handle = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameItemsHandle>();
+       
+       Kart = GetComponent<ArcadeKart>();
+
+       ResetItem();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        UseItem = Input.GetButtonDown("Item");
+        if (UseItem && HeldItem != -1)
+        {
+            ActivateItem();
+        } 
+    }
 
     public void StartPickup()
     {
@@ -49,11 +69,12 @@ public class KartItem : MonoBehaviour
         {
             foreach (ItemBoostFunction ItemBoost in ItemUse.Boost)
             {
-                Kart.Boost(ItemBoost.BoostAmt);
+             Kart.baseStats = Kart.baseStats + ItemBoost.NewStats;
+                //Kart.Boost(ItemBoost.BoostAmt);
             }
         }
         
-        if(RemainingItemUses <= 1)
+        if(RemainingItemUses <= 0)
         {
             ResetItem();
         }
@@ -65,24 +86,4 @@ public class KartItem : MonoBehaviour
         HeldItem = -1;
         CanPickup = true;
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       Handle = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameItemsHandle>();
-       
-       Kart = GetComponent<ArcadeKart>();
-
-       ResetItem();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        UseItem = Input.GetButtonDown("Item");
-        if (UseItem && HeldItem != -1)
-        {
-            ActivateItem();
-        } 
-    }
-}
+} 

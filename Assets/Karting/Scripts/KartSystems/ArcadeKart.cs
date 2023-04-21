@@ -73,7 +73,7 @@ namespace KartGame.KartSystems
                     ReverseSpeed        = a.ReverseSpeed + b.ReverseSpeed,
                     TopSpeed            = a.TopSpeed + b.TopSpeed,
                     Steer               = a.Steer + b.Steer,
-                   BoostedSpeed        = a.BoostedSpeed + b.BoostedSpeed,
+                    BoostedSpeed        = a.BoostedSpeed + b.BoostedSpeed,
                     BoostedAcceleration = a.BoostedAcceleration + b.BoostedAcceleration,
                 };
             }
@@ -108,8 +108,8 @@ namespace KartGame.KartSystems
             }
 
             var boosted = new ArcadeKart.Stats();
-            boosted.TopSpeed = boosted.BoostedSpeed;
-            boosted.Acceleration = boosted.BoostedAcceleration;
+            boosted.TopSpeed = baseStats.BoostedSpeed;
+            boosted.Acceleration = baseStats.BoostedAcceleration;
             Rigidbody.AddForce(transform.forward * BoostAmt, ForceMode.Impulse);
         }
 
