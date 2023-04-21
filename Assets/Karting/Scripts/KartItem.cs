@@ -24,13 +24,6 @@ public class KartItem : MonoBehaviour
         StartCoroutine(PickUp());
     }
 
-    public void ResetItem()
-    {
-        ItemUse = null;
-        HeldItem = -1;
-        CanPickup = true;
-    }
-
     public IEnumerator PickUp()
     {
         if (HeldItem == -1 && CanPickup)
@@ -64,6 +57,13 @@ public class KartItem : MonoBehaviour
         {
             ResetItem();
         }
+    }
+
+    public void ResetItem()
+    {
+        ItemUse = null;
+        HeldItem = -1;
+        CanPickup = true;
     }
 
     // Start is called before the first frame update

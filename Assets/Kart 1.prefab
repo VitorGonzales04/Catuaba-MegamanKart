@@ -3003,6 +3003,7 @@ GameObject:
   - component: {fileID: 8494452065336578855}
   - component: {fileID: 8494452065336578854}
   - component: {fileID: -1324410423961438609}
+  - component: {fileID: 6079253994998903045}
   m_Layer: 2
   m_Name: Kart 1
   m_TagString: Player
@@ -3068,6 +3069,8 @@ MonoBehaviour:
     Grip: 0.88
     Steer: 8
     AddedGravity: 1
+    BoostedSpeed: 50
+    BoostedAcceleration: 50
   m_VisualWheels:
   - {fileID: 8494452065449610941}
   - {fileID: 8494452064522753848}
@@ -3144,6 +3147,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a494755f30d5b04aa8f77fe99f0fb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DelayBeforeItemPickup: 1
+  HeldItem: -1
+  CanPickup: 1
+  ItemUse: {fileID: 0}
+--- !u!65 &6079253994998903045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494452065336578853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.75}
+  m_Center: {x: -0.2, y: 0.51, z: -0.67}
 --- !u!1 &8494452065353883560
 GameObject:
   m_ObjectHideFlags: 0
