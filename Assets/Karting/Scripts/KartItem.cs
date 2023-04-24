@@ -69,8 +69,8 @@ public class KartItem : MonoBehaviour
         {
             foreach (ItemBoostFunction ItemBoost in ItemUse.Boost)
             {
-             Kart.baseStats = Kart.baseStats + ItemBoost.NewStats;
-                //Kart.Boost(ItemBoost.BoostAmt);
+                Kart.baseStats = Kart.baseStats + ItemBoost.NewStats;
+                Kart.Boost(ItemBoost.BoostAmt*250);
             }
         }
         
