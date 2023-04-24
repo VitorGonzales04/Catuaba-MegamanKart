@@ -40,6 +40,6 @@ public class VehicleSelector : MonoBehaviour
 
     public void SelectVehicle(int sceneID)
     {
-        SceneManager.LoadScene(sceneID);
+        SceneManager.LoadScene("MainScene");
     }
 }
