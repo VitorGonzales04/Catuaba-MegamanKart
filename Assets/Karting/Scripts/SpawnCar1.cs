@@ -21,11 +21,11 @@ public class SpawnCar1 : MonoBehaviour
         cinemachineCamera.m_LookAt = carroPlayer.transform;
         cinemachineCamera.m_Follow = carroPlayer.transform;
         
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
         
-    }*/
+    }
 }
