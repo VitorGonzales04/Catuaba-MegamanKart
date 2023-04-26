@@ -60,7 +60,7 @@ namespace Items
           }
         }
 
-        private bool isntantiateItem()
+        private bool instantiateItem()
         {
             if(item && !itemInst)
             {
