@@ -9,7 +9,7 @@ public class SpawnCar1 : MonoBehaviour
     public Transform trans1;
     public GameObject gameObj1;
     public GameObject[] allVehicles1;
-    public CinemachineVirtualCamera cinemachineCamera1; //m_LookAt, m_Follow
+    public CinemachineVirtualCamera1 cinemachineCamera1; //m_LookAt, m_Follow
     public GameFlowManager gameFlowManager; //playerKart
     // Start is called before the first frame update
     void Awake()
