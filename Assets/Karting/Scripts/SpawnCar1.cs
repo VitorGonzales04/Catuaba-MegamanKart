@@ -5,8 +5,8 @@ using Cinemachine;
 using KartGame.KartSystems;
 
 public class SpawnCar1 : MonoBehaviour
-{
-    /*public Transform trans;
+{/*
+    public Transform trans;
     public GameObject gameObj;
     public GameObject[] allVehicles;
     public CinemachineVirtualCamera cinemachineCamera; //m_LookAt, m_Follow
@@ -21,11 +21,11 @@ public class SpawnCar1 : MonoBehaviour
         cinemachineCamera.m_LookAt = carroPlayer.transform;
         cinemachineCamera.m_Follow = carroPlayer.transform;
         
-    }*/
+    }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
+    }*/
 }
