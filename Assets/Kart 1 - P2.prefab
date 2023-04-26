@@ -3035,7 +3035,8 @@ MonoBehaviour:
   DelayBeforeItemPickup: 1
   HeldItem: 0
   CanPickup: 0
-  ItemUse: {fileID: 11400000, guid: f26f3d7b9dac32f4b9a191cb8e7b5701, type: 2}
+  ItemUse: {fileID: 0}
+  ItemButton: Item1
 --- !u!1 &3240619982414361556
 GameObject:
   m_ObjectHideFlags: 0

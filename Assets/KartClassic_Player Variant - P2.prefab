@@ -137,3 +137,4 @@ MonoBehaviour:
   HeldItem: 0
   CanPickup: 0
   ItemUse: {fileID: 0}
+  ItemButton: Item1

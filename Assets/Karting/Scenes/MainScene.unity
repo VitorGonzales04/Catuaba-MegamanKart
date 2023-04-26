@@ -587,6 +587,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d3408368ae27141b70f0c69163a417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trans1: {fileID: 26188610}
+  gameObj1: {fileID: 695900667}
+  allVehicles1:
+  - {fileID: 3240619982409673639, guid: 54dd76303bb4eb8428c9fe74f4b0a6d1, type: 3}
+  - {fileID: 1594803977906171025, guid: 477ccd48d034c7c4cbb7f75a6b24d6d5, type: 3}
+  - {fileID: 6824572641015654427, guid: 63ded33a666c88d4f8a3c262f34aa2ba, type: 3}
+  - {fileID: 8598696960770618637, guid: 716a5a707f90bdb489b851bf4bd615e5, type: 3}
+  cinemachineCamera1: {fileID: 0}
+  gameFlowManager: {fileID: 695900666}
 --- !u!4 &26188610
 Transform:
   m_ObjectHideFlags: 0

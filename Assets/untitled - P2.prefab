@@ -3635,6 +3635,7 @@ MonoBehaviour:
   HeldItem: 0
   CanPickup: 0
   ItemUse: {fileID: 0}
+  ItemButton: Item1
 --- !u!65 &610405699145993659
 BoxCollider:
   m_ObjectHideFlags: 0

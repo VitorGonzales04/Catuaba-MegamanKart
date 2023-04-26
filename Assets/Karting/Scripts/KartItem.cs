@@ -19,6 +19,8 @@ public class KartItem : MonoBehaviour
     public Item ItemUse;
     private int RemainingItemUses;  
 
+    public string ItemButton;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -32,7 +34,7 @@ public class KartItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UseItem = Input.GetButtonDown("Item");
+        UseItem = Input.GetButtonDown(ItemButton);
         if (UseItem && HeldItem != -1)
         {
             ActivateItem();
