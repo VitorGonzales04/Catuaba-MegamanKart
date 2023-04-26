@@ -38,7 +38,7 @@ namespace Items.LaunchableItem
         public virtual void LaunchForward()
         {
             if (owner)
-                transform.position = SetOwner.gameObject.transform.position - new Vector3(0, -1f, launchDistance);
+                transform.position = owner.gameObject.transform.position - new Vector3(0, -1f, launchDistance);
 
             isLaunch = true;
         }

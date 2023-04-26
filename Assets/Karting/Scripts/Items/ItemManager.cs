@@ -112,7 +112,7 @@ namespace Items
 
             private void useItem()
             {
-                if (instantiateItem()
+                if (instantiateItem())
                 {
                     itemInst.GetComponent<UseableItem.UseableItem>().use();
                     itemInst = null;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using KartGame.KartSystems;
-using static Item;
+using Items;
 
 public class KartItem : MonoBehaviour
 {
