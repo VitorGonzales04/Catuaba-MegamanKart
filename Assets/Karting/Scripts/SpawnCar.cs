@@ -20,7 +20,6 @@ public class SpawnCar : MonoBehaviour
         gameFlowManager.playerKart = carroPlayer.GetComponent<ArcadeKart>();
         cinemachineCamera.m_LookAt = carroPlayer.transform;
         cinemachineCamera.m_Follow = carroPlayer.transform;
-        
     }
 
     // Update is called once per frame

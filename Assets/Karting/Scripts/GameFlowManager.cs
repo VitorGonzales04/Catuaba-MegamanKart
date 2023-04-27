@@ -40,6 +40,7 @@ public class GameFlowManager : MonoBehaviour
 
     public bool autoFindKarts = true;
     public ArcadeKart playerKart;
+    public ArcadeKart playerKart1;
 
     ArcadeKart[] karts;
     ObjectiveManager m_ObjectiveManager;
@@ -56,8 +57,10 @@ public class GameFlowManager : MonoBehaviour
             if (karts.Length > 0)
             {
                 if (!playerKart) playerKart = karts[0];
+                if (!playerKart1) playerKart1 = karts[0];
             }
             DebugUtility.HandleErrorIfNullFindObject<ArcadeKart, GameFlowManager>(playerKart, this);
+            DebugUtility.HandleErrorIfNullFindObject<ArcadeKart, GameFlowManager>(playerKart1, this);
         }
 
         m_ObjectiveManager = FindObjectOfType<ObjectiveManager>();

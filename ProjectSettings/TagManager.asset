@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - ItemBox
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -21,8 +20,8 @@ TagManager:
   - CrashObject
   - Kart
   - TrainingCheckpoints
-  - 
-  - 
+  - CameraPlayer2
+  - CameraPlayer1
   - 
   - 
   - 
