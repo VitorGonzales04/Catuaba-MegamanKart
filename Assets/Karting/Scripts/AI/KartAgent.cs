@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 namespace KartGame.AI
 {
+
     /// <summary>
     /// Sensors hold information such as the position of rotation of the origin of the raycast and its hit threshold
     /// to consider a "crash".
