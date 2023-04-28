@@ -10,6 +10,8 @@ namespace Items.LaunchableItem
         [SerializeField] protected float dragDistance = 5f;
         protected bool isLaunch = false;
 
+        protected CarCollisionController CarCollCtl;
+
         // Start is called before the first frame update
         void Start()
         {
