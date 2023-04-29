@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace Items
 {
+    [CreateAssetMenu]
     public class Item : MonoBehaviour
     {
         public string Name;
@@ -13,6 +14,8 @@ namespace Items
         public int Uses;
 
         public ItemBoostFunction[] Boost;
+
+        public LaunchableItem.BombMan[] Bombman;
 
         public Sprite Visual;
 

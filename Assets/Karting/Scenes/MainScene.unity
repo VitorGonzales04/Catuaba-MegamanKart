@@ -41104,6 +41104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllItems:
   - {fileID: 11400000, guid: f26f3d7b9dac32f4b9a191cb8e7b5701, type: 2}
+  - {fileID: 11400000, guid: 8d7434687024f924ab4229d9ccb848b7, type: 2}
 --- !u!4 &2022112249
 Transform:
   m_ObjectHideFlags: 0

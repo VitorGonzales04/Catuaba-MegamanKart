@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c25f315bab1c2a74094f9dc8d784476b, type: 3}
-  m_Name: BoostTest
+  m_Name: BombMan
   m_EditorClassIdentifier: 
   Name: Boost Test
   description: Boosts the player forward
@@ -30,6 +30,7 @@ MonoBehaviour:
       AddedGravity: 0
       BoostedSpeed: 0
       BoostedAcceleration: 0
+  Bombman: []
   Visual: {fileID: 21300000, guid: afbf43b27f1d35848af68c48ead68feb, type: 3}
   type: 
   duration: 0
